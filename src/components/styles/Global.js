@@ -2,6 +2,29 @@ import { createGlobalStyle } from "styled-components";
 import * as theme from "./Theme.styled";
 
 export const GlobalStyles = createGlobalStyle`
+
+:root {
+  --bg-dark-1: #0f101a;
+  --bg-dark-2: #03030d;
+  --bg-dark-3: #0e101a;
+  --bg-light-1: #ffffff;
+  --bg-light-2: #f0eef0;
+  --light-1: #f8f9fc;
+  --light-2: #a7b7da;
+  --primary-1: #f7941e;
+  --primary-1-bg: #fdf5eb;
+  --primary-2: #0177bd;
+  --primary-2-bg: #0177bd80;
+  --primary-3: #282d86;
+  --primary-3-bg: #282d8650;
+  --dark: #1a1e25;
+  --secondary: #282d86;
+  --radius: 12px;
+  --radius-2: 8px;
+  --title-font: "Space Grotesk", sans-serif;
+  --regular-font: "Rubik";
+}
+
 *,
 *::before,
 *::after {
@@ -10,43 +33,49 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
 }
 
+// theme buttons color
+// body {
+//   background-color: ${({ theme }) => theme.colors.background};
+//   color: ${({ theme }) => theme.colors.text};
+//   font-family: 'Rubik';
+//   overflow-x: hidden;
+// }
+
 body {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 1%, 16%);
-  font-family: monospace;
+  background-color: var(--bg-light-2);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: var(--regular-font);
   overflow-x: hidden;
+  transition: all 0.20s linear;
 }
 
-// theme buttons color
-body {
-  background-color: ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.text};
-  font-family: monospace;
-  overflow-x: hidden;
+hr {
+  height: 1px;
+  background-color: #f0eef0;
+  border: none;
 }
 
+
 // theme buttons color
-.light {
+.light-theme {
   background-color: ${theme.light.colors.header};
 }
-.dark {
+.dark-theme {
   background-color: ${theme.dark.colors.header};
 }
-.blue {
+.blue-theme {
   background-color: ${theme.blue.colors.header};
 }
-.green {
+.green-theme {
   background-color: ${theme.green.colors.header};
 }
-.brown {
+.brown-theme {
   background-color: ${theme.brown.colors.header};
 }
-.pink {
+.pink-theme {
   background-color: ${theme.pink.colors.header};
 }
 
-// active theme
-.active{
-    border: 3px solid ${({ theme }) => theme.colors.border};
-}
 `;

@@ -1,0 +1,27 @@
+Develop an enterprise employee portal design 
+
+To develop an intuitive design of an enterprise portal which should be the single source of truth where 
+employees can find all the necessary information and access different application to complete their tasks,  
+day-to-day business activity. 
+
+
+Key functionality of portal 
+•	All-in-one employee portal for the organization
+•	Employee should navigate to various applications or search any person in the organization via search
+•	 Employee specific analytics of various engagements like Timesheet, Leaves, attendance, pending actions, Trainings, etc...
+•	Smart & Actionable notifications for employees for quicker reminders to perform actions
+•	Customization of widgets and theme change as per preferences
+•	To show catalogue having all the internal Business Applications along with the provision to mark applications as favorite, give ratings and provide feedbacks.  
+•	Contact details for all major functional support communities within the organization
+•	AI driven chat and voice BOT for assistance
+•	Social connect to wish the colleagues on their Birthday. 
+•	A space to appreciate employees to recognize their work.
+•	Multimedia space to publish orgwide communications, videos, Latest updates, and latest news
+
+
+•	Design should be aesthetically appealing and intuitive to provide a seamless User experience to the employees 
+•	Should not have too much of scrolls and white spaces in the UI
+•	It should deliver Targeted information with customizable options for the users 
+Specific information will be provided once enrolled to the assignment. 
+
+Design prototype which fulfills all the key functionalities mentioned in the user story

@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-
-import * as themes from './theme/schema.json';
-import { setToLS } from './utils/storage';
+import * as themeData from './components/styles/Theme.styled';
+import { getFromLocalStorage, setToLocalStorage } from './utils/storage';
 
 const Index = () => {
-  setToLS('all-themes', themes.default);
-  return(
+  if (!getFromLocalStorage("all-themes")) {
+    setToLocalStorage('all-themes', themeData.themes);
+  }
+  return (
     <App />
   )
 }
